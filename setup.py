@@ -20,7 +20,7 @@ long_description = read("README.md", "CHANGELOG.md")
 
 setuptools.setup(
     name="kusu",
-    version="0.1.3",
+    version="0.1.4",
     author="Kieran Wood",
     author_email="kieranw098@gmail.com",
     description="A set of utilities for developing python scripts",
@@ -28,6 +28,10 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Descent098/kusu",
     packages=setuptools.find_packages(),
+    install_requires=[
+        "yagmail[all]",
+        "tqdm",
+      ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
